@@ -9,14 +9,6 @@
 		>
 			{{ percent }}%</span
 		>
-		<BaseTooltip
-			v-if="tooltip"
-			:delay="[tooltipDelay]"
-			:placement="tooltipPlacement"
-			boundary="viewport"
-		>
-			<span v-t="tooltip"></span>
-		</BaseTooltip>
 	</span>
 </template>
 
@@ -42,18 +34,6 @@ export default {
 			default: 0
 		},
 		percent: {
-			type: Number,
-			default: 0
-		},
-		tooltip: {
-			type: String,
-			default: ""
-		},
-		tooltipPlacement: {
-			type: String,
-			default: "top"
-		},
-		tooltipDelay: {
 			type: Number,
 			default: 0
 		}
