@@ -1,6 +1,6 @@
 <template>
 	<span class="stat">
-		<span class="stat-title">{{ title }}</span>
+		<span class="stat-title" v-t="title" />
 		<span class="stat-prefix">{{ prefix }}</span>
 		<span class="stat-value">{{ valueFormated }}</span>
 		<span
@@ -18,6 +18,11 @@ const pollRate = 60; // every x seconds
 export default {
 	name: "Stat",
 	async beforeMount() {
+		// init
+		this.$store.dispatch("stats/update", {
+			root: true
+		});
+
 		setInterval(() => {
 			this.$store.dispatch("stats/update", {
 				root: true
