@@ -1,0 +1,15 @@
+{
+	"extends": ["plugin:vue/recommended", "prettier", "prettier/vue"],
+	"parser": "vue-eslint-parser",
+	"rules": {
+		"no-undef": "off",
+		"no-global-assign": "off",
+		"no-redeclare": "warn",
+		"vue/require-default-prop": "off",
+		"vue/require-v-for-key": "off"
+	},
+	"env": {
+		"es6": false,
+		"browser": true
+	}
+}

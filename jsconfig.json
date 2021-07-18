@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"lib": ["esnext", "dom", "dom.iterable"]
+	},
+	"include": ["src/**/*.ts", "src/**/*.js", "src/**/*.vue", "tests/**/*.ts"],
+	"exclude": ["node_modules"]
+}
