@@ -1,6 +1,6 @@
 <template>
 	<span class="stat">
-		<span class="stat-title" v-t="title" />
+		<span class="stat-title">{{ title }}</span>
 		<span class="stat-prefix">{{ prefix }}</span>
 		<span class="stat-value">{{ valueFormated }}</span>
 		<span
