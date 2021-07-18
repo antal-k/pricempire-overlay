@@ -13,13 +13,16 @@
 </template>
 
 <script>
+const pollRate = 60; // every x seconds
+
 export default {
 	name: "Stat",
-
 	async beforeMount() {
-		await this.$store.dispatch("stats/update", {
-			root: true
-		});
+		setInterval(() => {
+			this.$store.dispatch("stats/update", {
+				root: true
+			});
+		}, pollRate * 1000);
 	},
 	props: {
 		title: {
