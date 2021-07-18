@@ -58,7 +58,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "@/styles/theme";
 .main-stats {
 	display: flex;
 	justify-content: space-between;
@@ -67,6 +66,5 @@ export default {
 	align-items: center;
 	padding: 0.3125rem 0.9375rem;
 	border-radius: 0.3125rem;
-	// background: theme.$dark2;
 }
 </style>
