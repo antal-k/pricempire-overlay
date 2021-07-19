@@ -40,9 +40,6 @@ const state = {
  * @type {import("vuex").MutationTree<State>}
  */
 const mutations = {
-	setStats(state, stats) {
-		state.stats = stats;
-	},
 	setSkins(state, skins) {
 		state.skins = skins;
 	},
@@ -79,8 +76,9 @@ const actions = {
 	async update({ commit, dispatch, state }) {
 		try {
 			const meta = await getMeta();
-			replaceState('stats', meta);
-			commit("setStats", meta);
+			if (meta) {
+				replaceState('stats', meta);
+			}
 		} catch (e) {
 			console.log("🚀 ~ file: store/stats/index.js ~ line 58 ~ update ~ e", e);
 		}
