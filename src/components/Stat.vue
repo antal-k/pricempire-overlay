@@ -75,9 +75,19 @@ export default {
 		font-weight: 600;
 		&.up {
 			color: #0f0;
+			&::before {
+				content: "+";
+				margin-right: -7px;
+				margin-left: 10px;
+			}
 		}
 		&.down {
 			color: #f00;
+			&::before {
+				content: "-";
+				margin-right: -7px;
+				margin-left: 10px;
+			}
 		}
 	}
 }
