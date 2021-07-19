@@ -1,3 +1,7 @@
 @use "./theme" as *;
 @use "sass:map";
 @use "sass:color";
+
+* {
+    font-family: "Roboto", sans-serif;
+}

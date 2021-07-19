@@ -102,7 +102,8 @@ const getters = {
 		);
 	},
 	marketCapPercent(state) {
-		return Math.round((state.marketCap / state.marketCapPrevDay) * 100) / 100;
+		const percent = (state.marketCap / state.marketCapPrevDay * 100) - 100;
+		return Math.round(percent * 100) / 100;
 	},
 	marketValuePercent(state) {
 		return (
