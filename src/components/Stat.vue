@@ -56,7 +56,11 @@ export default {
 
 <style lang="scss" scoped>
 .stat {
+	// background: var(--color-lightdark);
+	border-radius: 0.4375rem;
 	padding: 0.625rem;
+	// padding-right: 1.25rem;
+	// padding-left: 1.25rem;
 	font-size: 1.875rem;
 	&-title {
 		font-weight: 400;
