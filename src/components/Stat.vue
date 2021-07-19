@@ -77,16 +77,16 @@ export default {
 			color: #0f0;
 			&::before {
 				content: "+";
-				margin-right: -7px;
-				margin-left: 10px;
+				margin-right: -0.4375rem;
+				margin-left: 0.625rem;
 			}
 		}
 		&.down {
 			color: #f00;
 			&::before {
 				content: "-";
-				margin-right: -7px;
-				margin-left: 10px;
+				margin-right: -0.4375rem;
+				margin-left: 0.625rem;
 			}
 		}
 	}
