@@ -87,11 +87,11 @@ export default {
 		}
 		&.down {
 			color: #f00;
-			&::before {
-				content: "-";
-				margin-right: -0.4375rem;
-				margin-left: 0.625rem;
-			}
+			// &::before {
+			// 	content: "";
+			// 	margin-right: -0.4375rem;
+			// 	margin-left: 0.625rem;
+			// }
 		}
 	}
 }
